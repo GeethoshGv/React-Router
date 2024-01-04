@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+.herosection {
+  height: 50vh;
+}
+.herosection div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.aboutsection {
+  height: 50vh;
+}
+.aboutsection div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.notfound {
+  height: 50vh;
+}
+.notfound div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.notfound div h1 {
+  font-size: 8rem;
+  font-family: Rubik Doodle Shadow;
+  color: black;
+}
+
+.featureSection {
+  height: 150vh;
+  width: 100%;
+}
+.featureSection .product-list-container {
+  padding: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  .featureSection .product-list-container {
+    padding: 1.2rem;
+  }
+}
+.featureSection .product-list-container h1 {
+  padding: 1rem 0 1rem 0;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: light;
+  letter-spacing: 0.1rem;
+}
+.featureSection .product-list-container .product-list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 600px) {
+  .featureSection .product-list-container .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.featureSection .product-list-container .product-list .product-tile {
+  width: 100%;
+}
+.featureSection .product-list-container .product-list .product-tile img {
+  border-radius: 0.51rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.product-info h3,
+.product-info p {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=style.css.map */

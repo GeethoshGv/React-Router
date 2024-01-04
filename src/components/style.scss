@@ -1,0 +1,62 @@
+$themes: (
+  light: (
+    text: #0b1114,
+    background: #e8f1f3,
+    primary: #345865,
+    secondary: #b991c5,
+    accent: #904c7a,
+  ),
+  dark: (
+    text: #ebf1f4,
+    background: #0c1517,
+    primary: #9abecb,
+    secondary: #623a6e,
+    accent: #b36f9e,
+  ),
+);
+
+$theme: map-get($themes, light);
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+.notfound {
+  height: 50vh;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    h1 {
+      font-size: 4rem;
+      font-family: Rubik Doodle Shadow;
+      color: black;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+  }
+}
+
+.product-info {
+  h3,
+  p {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  height: 50vh;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+}

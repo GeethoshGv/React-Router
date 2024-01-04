@@ -1,0 +1,40 @@
+.featureSection {
+  height: 150vh;
+  width: 100%;
+  .product-list-container {
+    padding: 4rem;
+    @media only screen and (max-width: 600px) {
+      padding: 1.2rem;
+    }
+    h1 {
+      padding: 1rem 0 1rem 0;
+      color: black;
+      font-size: 1.4rem;
+      font-weight: light;
+      letter-spacing: 0.1rem;
+    }
+
+    .product-list {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .product-tile {
+        width: 100%;
+        a {
+          text-decoration: none;
+        }
+        img {
+          border-radius: 0.51rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

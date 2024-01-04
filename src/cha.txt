@@ -1,0 +1,164 @@
+import React from "react";
+import "../style.scss";
+import { Link } from "react-router-dom";
+import "./feature.scss";
+
+const Feature = () => {
+  const [vans, setVans] = React.useState([]);
+  React.useEffect(() => {
+    fetch("/api/items")
+      .then((res) => res.json())
+      .then((data) => setVans(data.items));
+  }, []);
+
+  const vanElements = vans.map((item) => (
+    <div key={item.id} className="product-tile">
+      <Link to={`/feature/${item.id}`}>
+        <img src={item.imageUrl} />
+        <div className="product-info">
+          <h3>{item.name}</h3>
+          <p>
+            ${item.price}
+            <span></span>
+          </p>
+        </div>
+      </Link>
+    </div>
+  ));
+
+  return (
+    <>
+      <section className="featureSection">
+        <div className="product-list-container">
+          <h1>Feature Product</h1>
+          <div className="product-list">{vanElements}</div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Feature;
+
+
+import { createServer, Model } from "miragejs";
+
+createServer({
+  models: {
+    items: Model,
+  },
+
+  seeds(server) {
+    server.create("item", {
+      id: "1",
+      name: "Scent",
+      price: 60,
+      description:
+        "The scent of a pine forest is an intoxicating mix of fresh, earthy, and resinous notes. It's a complex aroma that can evoke a variety of feelings and memories, from the crispness of a winter morning to the cozy warmth of a crackling fire.!",
+      imageUrl:
+        "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+
+    server.create("item", {
+      id: "2",
+      name: "Camera",
+      price: 80,
+      description:
+        "Explore the best of both worlds in video production and stills photography with the new EOS R5 C, a mirrorless hybrid camera with the capabilities of CINEMA EOS and EOS R system. A compact and lightweight system with 8K/60P resolution video recording is born. The all-new internal cooling fan system allows continuous internal recording in various file formats, including Cinema RAW Light, XF-AVC, and MP4.",
+      imageUrl:
+        "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+
+    server.create("item", {
+      id: "3",
+      name: "TS-E50mm f/2.8L ",
+      price: 100,
+      description:
+        "A large diameter, standard tilt-shift lens that boasts of wide tilting and shifting ranges of ±8.5° and ±12mm respectively and the ability to shoot macro images at 0.5x maximum magnification. Improved operability through features such as large tilt and shift knobs and a locking mechanism to prevent unintended movement provide powerful support for professional shooting purposes.",
+      imageUrl:
+        "https://images.pexels.com/photos/279906/pexels-photo-279906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+
+    server.create("item", {
+      id: "4",
+      name: "Bleu de Chanel",
+      price: 65,
+      description:
+        "BLEU DE CHANEL exudes accomplishment through a timeless and unexpected scent. This aromatic-woody perfume with a captivating trail embodies freedom with its strength and elegance, just like the man who wears it. The BLEU DE CHANEL fragrance is available in a complete line of shaving and grooming essentials.",
+      imageUrl:
+        "https://images.pexels.com/photos/9202894/pexels-photo-9202894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+
+    server.create("item", {
+      id: "5",
+      name: "Bleu de Chanel",
+      price: 120,
+      description:
+        "BLEU DE CHANEL exudes accomplishment through a timeless and unexpected scent. This aromatic-woody perfume with a captivating trail embodies freedom with its strength and elegance, just like the man who wears it. The BLEU DE CHANEL fragrance is available in a complete line of shaving and grooming essentials.",
+      imageUrl:
+        "https://images.pexels.com/photos/3788293/pexels-photo-3788293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      type: "luxury",
+    });
+
+    server.create("item", {
+      id: "6",
+      name: "Iphone 11",
+      price: 70,
+      description:
+        "The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc. It was released in September 2019 and is the thirteenth generation of the iPhone.",
+      imageUrl:
+        "https://images.pexels.com/photos/10885666/pexels-photo-10885666.jpeg",
+    });
+    server.create("item", {
+      id: "7",
+      name: "Video cam",
+      price: 70,
+      description:
+        "A compact and lightweight system with 8K/60P resolution video recording is born. The all-new internal cooling fan system allows continuous internal recording in various file formats, including Cinema RAW Light, XF-AVC, and MP4",
+      imageUrl:
+        "https://images.pexels.com/photos/11953865/pexels-photo-11953865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+    server.create("item", {
+      id: "8",
+      name: "Iphone XR",
+      price: 70,
+      description:
+        "a smartphone designed, developed, and marketed by Apple Inc. It was released in September 2019 and is the thirteenth generation of the iPhone..",
+      imageUrl:
+        "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+    server.create("item", {
+      id: "9",
+      name: "Iphone SE",
+      price: 70,
+      description:
+        "a smartphone designed, developed, and marketed by Apple Inc. It was released in September 2019 and is the thirteenth generation of the iPhone.",
+      imageUrl:
+        "https://images.pexels.com/photos/3586249/pexels-photo-3586249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+    server.create("item", {
+      id: "10",
+      name: "nike Air",
+      price: 70,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
+  },
+
+  routes() {
+    this.namespace = "api";
+    this.logging = false;
+
+    this.get("/items", (schema, request) => {
+      return schema.items.all();
+    });
+
+    this.get("/items/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.items.find(id);
+    });
+  },
+});
+
