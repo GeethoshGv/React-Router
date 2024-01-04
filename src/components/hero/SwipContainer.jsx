@@ -27,9 +27,7 @@ const SwipContainer = () => {
           <SwiperSlide>
             <img src={e} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src={t} alt="" />
-          </SwiperSlide>
+
           <SwiperSlide>
             <img src={w} alt="" />
           </SwiperSlide>

@@ -1,5 +1,5 @@
 .featureSection {
-  height: 150vh;
+  height: 100%;
   width: 100%;
   .product-list-container {
     padding: 4rem;
@@ -27,6 +27,7 @@
 
       .product-tile {
         width: 100%;
+
         a {
           text-decoration: none;
         }

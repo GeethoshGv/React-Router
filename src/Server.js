@@ -124,7 +124,7 @@ createServer({
     server.create("item", {
       id: "12",
       name: " watch",
-      price: 19,
+      price: 38,
       description:
         "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
       imageUrl:
@@ -144,7 +144,7 @@ createServer({
     server.create("item", {
       id: "14",
       name: " shoes",
-      price: 19,
+      price: 199,
       description:
         "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
       imageUrl:
@@ -154,7 +154,7 @@ createServer({
     server.create("item", {
       id: "15",
       name: "nike cap",
-      price: 19,
+      price: 10,
       description:
         "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
       imageUrl:
@@ -164,7 +164,7 @@ createServer({
     server.create("item", {
       id: "16",
       name: "nike",
-      price: 19,
+      price: 55,
       description:
         "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
       imageUrl:
@@ -173,8 +173,8 @@ createServer({
     });
     server.create("item", {
       id: "17",
-      name: "nike",
-      price: 19,
+      name: "nike white",
+      price: 49,
       description:
         "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
       imageUrl:
@@ -183,10 +183,10 @@ createServer({
     });
     server.create("item", {
       id: "18",
-      name: "samsung",
-      price: 19,
+      name: "Samsung S9",
+      price: 199,
       description:
-        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+        "Buy the Samsung Galaxy S9 64GB (Unlocked) in Lilac Purple. Discover the reimagined camera with Dual Aperture lens, 960 fps slo-mo on a 5.8 inch infinity",
       imageUrl:
         "https://images.pexels.com/photos/1447254/pexels-photo-1447254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       cat: "phone",
