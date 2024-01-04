@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 .herosection {
   background-color: white;
-  height: 300vh;
+  height: 100%;
   background-color: map-get($theme, background);
   color: map-get($theme, text);
 }

@@ -111,6 +111,86 @@ createServer({
         "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       cat: "fashion",
     });
+    server.create("item", {
+      id: "11",
+      name: "analog watch",
+      price: 10,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "electronic",
+    });
+    server.create("item", {
+      id: "12",
+      name: " watch",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "electronic",
+    });
+    server.create("item", {
+      id: "13",
+      name: " beat headphone",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "electronic",
+    });
+    server.create("item", {
+      id: "14",
+      name: " shoes",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "fashion",
+    });
+    server.create("item", {
+      id: "15",
+      name: "nike cap",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "fashion",
+    });
+    server.create("item", {
+      id: "16",
+      name: "nike",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "fashion",
+    });
+    server.create("item", {
+      id: "17",
+      name: "nike",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "fashion",
+    });
+    server.create("item", {
+      id: "18",
+      name: "samsung",
+      price: 19,
+      description:
+        "The Nike Air Force 1 is a true icon in the sneaker world. It's been a staple since its debut in 1982 and continues to be a popular choice for people of all ages and styles. Here's what you need to know about the Air Force 1",
+      imageUrl:
+        "https://images.pexels.com/photos/1447254/pexels-photo-1447254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      cat: "phone",
+    });
   },
 
   routes() {
