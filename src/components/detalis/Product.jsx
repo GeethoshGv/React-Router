@@ -15,24 +15,34 @@ const Product = () => {
   return (
     <>
       <section className="product">
-        <Link to=".." relative="path" className="productbackbutton">
-          Back
-        </Link>
+        <div className="productbackbutton">
+          <button>
+            <Link to=".." relative="path">
+              Back
+            </Link>
+          </button>
+        </div>
         <div className="product-container">
           {detail ? (
-            <div className="product-detail">
-              <img src={detail.imageUrl} />
+            <>
+              <div className="product-detail">
+                <div className="detimgdiv">
+                  <img src={detail.imageUrl} />
+                </div>
 
-              <h2>{detail.name}</h2>
-              <p>{detail.description}</p>
-              <p className="price">
-                <span>Price :- $ {detail.price}</span>
-              </p>
-              <div className="buttdiv">
-                <button className="product-button">Buy Now</button>
-                <button className="product-button">Add To Cart</button>
+                <div>
+                  <h2>{detail.name}</h2>
+                  <p>{detail.description}</p>
+                  <p className="price">
+                    <span>Price :- $ {detail.price}</span>
+                  </p>
+                  <div className="buttdiv">
+                    <button className="product-button">Buy Now</button>
+                    <button className="product-button">Add To Cart</button>
+                  </div>
+                </div>
               </div>
-            </div>
+            </>
           ) : (
             <div className="loading">
               <h2>Loading...</h2>

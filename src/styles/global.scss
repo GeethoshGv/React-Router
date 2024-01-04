@@ -7,34 +7,6 @@ $paratextColor: rgb(129, 129, 129);
 body {
   background: rgb(255, 255, 255);
   color: $maincolor;
-
-  // section {
-  //   border: 1px solid greenyellow;
-  //   background-color: rgba(172, 255, 47, 0.503);
-  // }
-
-  // nav {
-  //   border: 1px solid blue;
-  // }
-
-  // a {
-  //   border: 1px solid rgb(0, 0, 0);
-  // }
-  // div {
-  //   border: 1px solid red;
-  // }
-  // footer {
-  //   border: 1px solid blue;
-  // }
-  // h1 {
-  //   border: 1px solid rgb(0, 251, 255);
-  // }
-  // h2 {
-  //   border: 1px solid rgb(17, 132, 19);
-  // }
-  // p {
-  //   border: 1px solid rgb(58, 58, 60);
-  // }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
@@ -61,6 +33,7 @@ nav {
     height: 17vh;
   }
   div {
+    flex: 1;
     padding: 0.55rem;
     width: 50%;
     @media only screen and (max-width: 600px) {
@@ -85,7 +58,7 @@ nav {
 
           position: relative;
           @media only screen and (max-width: 600px) {
-            height: 20px;
+            height: 25px;
             position: absolute;
             left: 10px;
             top: 20px;

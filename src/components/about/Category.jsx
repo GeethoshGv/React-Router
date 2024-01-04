@@ -7,10 +7,15 @@ const Category = () => {
   return (
     <>
       <div className="Catdiv">
-        <Link className="Categorybackbutton" to="..">
-          {" "}
-          Back
-        </Link>
+        <div className="productbackbutton">
+          <button>
+            <Link className="Categorybackbutton" to="..">
+              {" "}
+              Back
+            </Link>
+          </button>
+        </div>
+
         <h4>Shopby Category</h4>
         <div className="linkdiv">
           <Link to="mobile">
