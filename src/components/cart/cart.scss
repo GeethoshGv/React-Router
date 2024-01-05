@@ -1,6 +1,6 @@
 .cartsection {
   color: black;
-  height: 80vh;
+  height: 100%;
   width: 100%;
   main {
     height: 100%;
@@ -8,6 +8,15 @@
 }
 .renderdiv {
   display: flex;
+  padding: 5rem 0 5rem 0;
+
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.signin {
+  display: flex;
+  padding: 5rem 0 5rem 0;
   align-items: center;
   justify-content: center;
   height: 100%;

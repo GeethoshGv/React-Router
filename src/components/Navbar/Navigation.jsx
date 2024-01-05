@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { search, logo } from "../../assets/img/img";
+import "./nav.scss";
+
 const Navigation = () => {
   return (
     <>

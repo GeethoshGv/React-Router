@@ -22,7 +22,7 @@ const Cart = () => {
 
           <div className="renderdiv">
             {login ? (
-              <div>
+              <div className="signin">
                 <h1>sign in</h1>
               </div>
             ) : (
