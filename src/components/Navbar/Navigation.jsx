@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { search, logo } from "../../assets/img/img";
 import "./nav.scss";
 
 const Navigation = () => {
+  const [searchText, setSearchText] = useState("");
+
+  const [nitem, setItem] = useState([]);
+
+  const run = () => {
+    fetch(`/api/items/${searchText}`)
+      .then((res) => res.json())
+      .then((data) => setItem(data.items));
+  };
+
   return (
     <>
       <nav>
@@ -61,14 +71,25 @@ const Navigation = () => {
         </div>
         <div className="search">
           <div className="actualsearch">
-            <input type="search" name="" id="" placeholder="Search Product" />
-
-            <button>
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Search Product"
+              onChange={(event) => {
+                setSearchText(event.target.value);
+              }}
+            />
+            <button onClick={run}>
               <img src={search} alt="" />
             </button>
+
+            <Link to={`/feature/${searchText.id}`}></Link>
           </div>
         </div>
       </nav>
+      <p style={{ color: "black" }}>price: {nitem.price}</p>
+      <img src={nitem.imageUrl} alt="" width={"110px"} />
     </>
   );
 };

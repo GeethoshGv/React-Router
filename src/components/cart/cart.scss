@@ -16,10 +16,20 @@
 }
 .signin {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 5rem 0 5rem 0;
   align-items: center;
   justify-content: center;
   height: 100%;
+  h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+  }
+  h3 {
+    color: rgb(73, 73, 73);
+  }
 }
 
 .butdiv {

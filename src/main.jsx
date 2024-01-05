@@ -7,6 +7,7 @@ import Nope from "./components/notfound/Nope.jsx";
 import Feature from "./components/feature/Feature.jsx";
 import Product from "./components/detalis/Product.jsx";
 import Mobile from "./components/category/Mobile.jsx";
+import Cartdetalis from "./components/category/Cartdetalis.jsx";
 import Fashion from "./components/category/Fashion.jsx";
 import Electronics from "./components/category/Electronics.jsx";
 
@@ -17,7 +18,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-import "./Server.js";
+import "./Mock.js";
 import Cart from "./components/cart/Cart.jsx";
 
 const route = createBrowserRouter(
@@ -30,9 +31,9 @@ const route = createBrowserRouter(
         <Route path="mobile" element={<Mobile />} />
         <Route path="fashion" element={<Fashion />} />
         <Route path="electronic" element={<Electronics />} />
+        <Route path="mobile/:id" element={<Cartdetalis />} />
       </Route>
       <Route path="cart" element={<Cart />} />
-
       <Route path="*" element={<Nope />} />
     </Route>
   )

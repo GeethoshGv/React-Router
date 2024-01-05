@@ -23,7 +23,9 @@ const Cart = () => {
           <div className="renderdiv">
             {login ? (
               <div className="signin">
-                <h1>sign in</h1>
+                <h1>Log in</h1>
+                <h3>or</h3>
+                <h1>Sign in</h1>
               </div>
             ) : (
               <div className="afterlogin">

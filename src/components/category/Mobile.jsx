@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./mobile.scss";
 
 const Mobile = () => {
   const [phoneItems, setPhoneItems] = useState([]);
@@ -12,7 +13,7 @@ const Mobile = () => {
 
   const phoneElements = phoneItems.map((item) => (
     <div key={item.id} className="product-tile">
-      <Link to={`/category/items/${item.id}`}>
+      <Link to={`/category/mobile/${item.id}`}>
         <img src={item.imageUrl} alt={item.name} />
         <div className="product-info">
           <h3>{item.name}</h3>
