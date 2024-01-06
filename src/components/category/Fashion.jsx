@@ -12,7 +12,7 @@ const Fashion = () => {
 
   const fashionElements = fashionItems.map((item) => (
     <div key={item.id} className="product-tile">
-      <Link to={`/feature/${item.id}`}>
+      <Link to={`/category/fashion/${item.id}`}>
         <img src={item.imageUrl} alt={item.name} />
         <div className="product-info">
           <h3>{item.name}</h3>

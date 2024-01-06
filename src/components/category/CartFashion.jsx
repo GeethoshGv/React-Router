@@ -3,7 +3,7 @@ import "./cartdetalis.scss";
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 
-const Cartdetalis = () => {
+const CartFashion = () => {
   const params = useParams();
   const [detail, setdetail] = React.useState(null);
 
@@ -56,4 +56,4 @@ const Cartdetalis = () => {
   );
 };
 
-export default Cartdetalis;
+export default CartFashion;

@@ -83,13 +83,15 @@ const Navigation = () => {
             <button onClick={run}>
               <img src={search} alt="" />
             </button>
-
-            <Link to={`/feature/${searchText.id}`}></Link>
           </div>
         </div>
       </nav>
-      <p style={{ color: "black" }}>price: {nitem.price}</p>
-      <img src={nitem.imageUrl} alt="" width={"110px"} />
+
+      <Link to={`/feature/${searchText}`} style={{ textDecoration: "none" }}>
+        <p style={{ color: "black" }}>name: {nitem.name}</p>
+        <p style={{ color: "black" }}>price: {nitem.price}</p>
+        <img src={nitem.imageUrl} alt="" width={"110px"} />
+      </Link>
     </>
   );
 };

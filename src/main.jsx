@@ -8,6 +8,7 @@ import Feature from "./components/feature/Feature.jsx";
 import Product from "./components/detalis/Product.jsx";
 import Mobile from "./components/category/Mobile.jsx";
 import Cartdetalis from "./components/category/Cartdetalis.jsx";
+import CartFashion from "./components/category/CartFashion.jsx";
 import Fashion from "./components/category/Fashion.jsx";
 import Electronics from "./components/category/Electronics.jsx";
 
@@ -32,6 +33,7 @@ const route = createBrowserRouter(
         <Route path="fashion" element={<Fashion />} />
         <Route path="electronic" element={<Electronics />} />
         <Route path="mobile/:id" element={<Cartdetalis />} />
+        <Route path="fashion/:id" element={<CartFashion />} />
       </Route>
       <Route path="cart" element={<Cart />} />
       <Route path="*" element={<Nope />} />

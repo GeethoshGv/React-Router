@@ -217,9 +217,13 @@ createServer({
       return schema.items.where({ cat: "electronic" });
     });
 
-    this.get("/category/mobile/items/:id", (schema, request) => {
+    this.get("/category/mobile/:id", (schema, request) => {
       const id = request.params.id;
-      return schema.items.where({ id, cat: "phone" });
+      return schema.vans.where({ id, cat: "phone" });
+    });
+    this.get("/category/fashion/:id", (schema, request) => {
+      const id = request.params.id;
+      return schema.vans.where({ id, cat: "fashion" });
     });
   },
 });
